@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #7a6953;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: #c7914c;
+  margin-bottom: 20px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 60px;
+  text-shadow: 3px 1px 0px #fbd8ab;
+}
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.key {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fbd8ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.key.active {
+  border: 5px solid #fab75f;
+  color: #fab75f;
+  font-size: 50px;
+  width: 90px;
+  height: 90px;
+  box-shadow: 3px 3px 5px #000000;
+}
+
+.composer {
+  width: 260px;
+  margin-top: 20px;
+}
+.composer #input {
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+.composer button {
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.composer button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  margin-top: 20px;
+  color: #fbd8ab;
+  font-size: 13px;
+  width: 400px;
+  text-align: justify;
+}
